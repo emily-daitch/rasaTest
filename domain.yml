@@ -9,6 +9,7 @@ intents:
   - mood_unhappy
   - bot_challenge
   - buy_product
+  - buy_product_quantity
 
 responses:
   utter_greet:
@@ -30,8 +31,11 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
-  utter_how_much_many:
-  - text: "How much/many would you like?"
+  utter_how_many:
+  - text: "How many would you like?"
+
+  utter_how_much:
+  - text: "How much would you like?"
 
 session_config:
   session_expiration_time: 60

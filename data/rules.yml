@@ -12,7 +12,12 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
- - rule: Say 'How much/many would you like' if the user wants a product
-    steps:
-    - intent: buy_product
-    - action: utter_how_much_many
+- rule: Say 'How much would you like' if the user wants a product
+  steps:
+  - intent: buy_product
+  - action: utter_how_much
+
+- rule: Say 'How many would you like' if the user wants a product by quantity
+  steps:
+  - intent: buy_product_quantity
+  - action: utter_how_many

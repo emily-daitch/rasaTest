@@ -34,4 +34,21 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: buy_product
-  - action: utter_how_much_many
+  - action: utter_how_much
+
+- story: buy path quantity 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: buy_product_quantity
+  - action: utter_how_many
+
+- story: short buy path 1
+  steps:
+  - intent: buy_product
+  - action: utter_how_much
+
+- story: short buy path quantity 1
+  steps:
+  - intent: buy_product_quantity
+  - action: utter_how_many

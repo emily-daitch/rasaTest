@@ -20,8 +20,12 @@ nlu:
 - intent: buy_product
   examples: |
     - Help me buy chalk.
-    - Help me buy markers.
     - Help me buy paint.
+
+- intent: buy_product_quantity
+  examples: |
+    - Help me buy brushes.
+    - Help me buy markers.
 
 - intent: goodbye
   examples: |
